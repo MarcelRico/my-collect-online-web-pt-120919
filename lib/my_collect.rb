@@ -6,6 +6,7 @@ def my_collect(array)
     
     while array[idx] # Load collection array with results from yield
       collection << yield(array[idx])
+      idx+=1
     end
   end
   collection # Return Final Collection Array
